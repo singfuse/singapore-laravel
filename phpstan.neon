@@ -5,4 +5,4 @@ parameters:
     paths:
         - src
     ignoreErrors:
-        - '#Function database_path not found#'
+        - '#Function database_path|config_path not found#'

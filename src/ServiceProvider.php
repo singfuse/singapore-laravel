@@ -11,6 +11,10 @@ class ServiceProvider extends BaseServiceProvider
         $this->publishesMigrations([
             __DIR__.'/../database/migrations' => database_path('migrations'),
         ], 'singapore-migrations');
+
+        $this->publishes([
+            __DIR__.'/../config/singapore.php' => config_path('singapore.php'),
+        ]);
     }
 
     public function register()
