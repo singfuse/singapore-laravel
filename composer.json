@@ -1,0 +1,51 @@
+{
+    "name": "vinkas/singapore-laravel",
+    "description": "Laravel package for Singapore's open data API and regions, areas, and subzones data",
+    "type": "library",
+    "require": {
+        "vinkas/singapore": "^0.3.0",
+        "illuminate/support": "^11.34",
+        "illuminate/database": "^11.34"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.0",
+        "laravel/pint": "^1.18"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Vinkas\\Singapore\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vinoth Kannan",
+            "email": "vinoth.kannan@vinkas.com"
+        },
+        {
+            "name": "Vinkas",
+            "homepage": "http://vinkas.com"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Vinkas\\Singapore\\ServiceProvider"
+            ],
+            "aliases": {
+                "Singapore": "Vinkas\\Singapore\\Facade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "analyse": "phpstan analyse",
+        "pint": "./vendor/bin/pint",
+        "pint-test": "./vendor/bin/pint --test",
+        "test": "composer run analyse && composer run pint-test"
+    }
+}
