@@ -4,5 +4,8 @@ parameters:
         - vendor/autoload.php
     paths:
         - src
+        - database
     ignoreErrors:
         - '#Function database_path|config_path not found#'
+        - '#Call to an undefined static method Vinkas\\Singapore\\Models\\.*insert#'
+        - '#Call to an undefined static method Vinkas\\Singapore\\Facade\:\:#'
