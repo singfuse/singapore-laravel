@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string('slug');
             $table->string('zh_name')->nullable();
             $table->string('ta_name')->nullable();
-            $table->decimal('latitude', total: 8, places: 6);
-            $table->decimal('longitude', total: 9, places: 6);
+            $table->decimal('latitude', total: 8, places: 6)->nullable();
+            $table->decimal('longitude', total: 9, places: 6)->nullable();
             $table->timestamps();
         });
     }
