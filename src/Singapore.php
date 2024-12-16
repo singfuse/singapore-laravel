@@ -6,6 +6,7 @@ use Vinkas\Singapore\Api\Connector;
 use Vinkas\Singapore\Data\Areas;
 use Vinkas\Singapore\Data\Regions;
 use Vinkas\Singapore\Data\Subzones;
+use Vinkas\Singapore\Data\PostalDistricts;
 
 class Singapore
 {
@@ -34,5 +35,10 @@ class Singapore
     public function subzones(): array
     {
         return Subzones::all();
+    }
+
+    public function postalDistricts(): array
+    {
+        return PostalDistricts::all();
     }
 }
