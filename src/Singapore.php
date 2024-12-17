@@ -4,9 +4,9 @@ namespace Vinkas\Singapore;
 
 use Vinkas\Singapore\Api\Connector;
 use Vinkas\Singapore\Data\Areas;
+use Vinkas\Singapore\Data\PostalDistricts;
 use Vinkas\Singapore\Data\Regions;
 use Vinkas\Singapore\Data\Subzones;
-use Vinkas\Singapore\Data\PostalDistricts;
 
 class Singapore
 {
