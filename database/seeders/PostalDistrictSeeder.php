@@ -13,6 +13,8 @@ class PostalDistrictSeeder extends Seeder
      */
     public function run(): void
     {
-        PostalDistrict::insert(Singapore::postalDistricts());
+        collect(Singapore::postalDistricts())->each(function ($postalDistrict) {
+            PostalDistrict::create($postalDistrict);
+        });
     }
 }

@@ -3,7 +3,7 @@
     "description": "Laravel package for Singapore's open data API and regions, areas, and subzones data",
     "type": "library",
     "require": {
-        "vinkas/singapore": "^0.3.1",
+        "vinkas/singapore": "^0.3.2",
         "illuminate/support": "^11.34",
         "illuminate/database": "^11.34"
     },
