@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
             RegionSeeder::class,
             AreaSeeder::class,
             SubzoneSeeder::class,
+            PostalDistrictSeeder::class,
         ]);
     }
 }
