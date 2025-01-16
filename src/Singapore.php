@@ -2,6 +2,7 @@
 
 namespace Vinkas\Singapore;
 
+use Carbon\Carbon;
 use Vinkas\Singapore\Api\Connector;
 use Vinkas\Singapore\Data\Areas;
 use Vinkas\Singapore\Data\PostalDistricts;
@@ -15,6 +16,11 @@ class Singapore
     public function __construct()
     {
         $this->apiConnector = new Connector;
+    }
+
+    public function now(): Carbon
+    {
+        return Carbon::now('Asia/Singapore');
     }
 
     public function api(): Connector
