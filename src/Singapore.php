@@ -23,6 +23,21 @@ class Singapore
         return Carbon::now('Asia/Singapore');
     }
 
+    public function today(): Carbon
+    {
+        return $this->now()->startOfDay();
+    }
+
+    public function todayLabel(): string
+    {
+        return $this->today()->format('l, jS F Y');
+    }
+
+    public function tomorrow(): Carbon
+    {
+        return $this->today()->addDay();
+    }
+
     public function api(): Connector
     {
         return $this->apiConnector;
